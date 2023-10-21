@@ -1,6 +1,10 @@
 const path = require('path');
 const { app, BrowserWindow } = require('electron');
 
+// the below one is used to check if the app is in production or development
+const isMac = process.platform === 'darwin';
+
+// the below one is used to create a window
 function createMainWindow() {
     const mainWindow = new BrowserWindow({
         title: 'SnapScale',
@@ -18,4 +22,11 @@ function createMainWindow() {
 // or you can use the below one to create a window when the app is ready it returns a promise
 app.whenReady().then(() => {
     createMainWindow();
+});
+
+// the below one is used to quit the app when all the windows are closed except on mac as mac works differently
+app.on('window-all-closed', () => {
+    if (!isMac) {
+        app.quit();
+    }
 });
