@@ -12,6 +12,7 @@ const widthInput = document.querySelector('#width');
 function loadImage(e) {
   const file = e.target.files[0];
 
+  // check if file is an image
   if (!isFileImage(file)) {
         alertError('Please select an image file');
         return;
@@ -21,6 +22,7 @@ function loadImage(e) {
 
   const image = new Image();
   image.src = URL.createObjectURL(file);
+  
   image.onload = () => {
     const { width, height } = image;
     heightInput.value = height;
@@ -46,7 +48,6 @@ function sendImage(e) {
 
   const width = widthInput.value;
   const height = heightInput.value;
-
 
   if(width === '' || height === '') {
     alertError('Please enter a width and height');

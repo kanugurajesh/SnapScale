@@ -8,6 +8,7 @@ const ResizeImg = require('resize-img');
 const isMac = process.platform === 'darwin';
 const isDev = process.env.NODE_ENV !== 'production';
 
+// the below one is used to check if the app is in production or development
 let mainWindow;
 
 // the below one is used to create a window
@@ -32,6 +33,7 @@ function createMainWindow() {
     mainWindow.loadFile(path.join(__dirname, 'renderer/index.html'));
 }
 
+// the below one is used to create a about window
 function createAboutWindow() {
     const aboutWindow = new BrowserWindow({
         title: 'About SnapScale',
@@ -42,6 +44,7 @@ function createAboutWindow() {
     aboutWindow.loadFile(path.join(__dirname, 'renderer/about.html'));
 }
 
+// the below one is used to create a menu
 const menu = [
     ...(isMac ? [{ 
         label: app.name,
@@ -101,6 +104,7 @@ ipcMain.on('image:resize', (e, options) => {
     resizeImage(options);
 });
 
+// the below one is used to resize the image
 async function resizeImage({ imgPath, width, height, dest }) {
     try {
         const newPath = await ResizeImg(fs.readFileSync(imgPath), {

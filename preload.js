@@ -3,6 +3,7 @@ const path = require('path');
 const Toastify = require('toastify-js');
 const { contextBridge, ipcRenderer } = require('electron');
 
+// Expose protected methods that allow the renderer process to use
 contextBridge.exposeInMainWorld('os', {
     homedir: () => os.homedir(),
 })
