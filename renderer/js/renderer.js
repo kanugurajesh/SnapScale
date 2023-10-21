@@ -1,12 +1,12 @@
-// Some JavaScript to load the image and show the form. There is no actual backend functionality. This is just the UI
+// const { ipcRenderer } = require("electron");
 
+// Some JavaScript to load the image and show the form. There is no actual backend functionality. This is just the UI
 const form = document.querySelector('#img-form');
 const img = document.querySelector('#img');
 const outputPath = document.querySelector('#output-path');
 const filename = document.querySelector('#filename');
 const heightInput = document.querySelector('#height');
 const widthInput = document.querySelector('#width');
-const imgPath = img.files[0].path;
 
 // console.log(versions.node());
 function loadImage(e) {
@@ -15,7 +15,7 @@ function loadImage(e) {
   if (!isFileImage(file)) {
         alertError('Please select an image file');
         return;
-  }else {
+  } else {
     alertSuccess('Image loaded successfully');
   }
 
@@ -44,17 +44,26 @@ function sendImage(e) {
     return;
   }
 
+  const width = widthInput.value;
+  const height = heightInput.value;
+
+
   if(width === '' || height === '') {
     alertError('Please enter a width and height');
     return;
   }
 
+  const imgPath = img.files[0].path;
+
   // send to main using ipcRenderer
   ipcRenderer.send('image:resize', {
     imgPath,
-    width: parseInt(widthInput.value),
-    height: parseInt(heightInput.value),
-    filename: filename.value
+    width,
+    height,
+  });
+
+  ipcRenderer.on('image:done', (e, message) => {
+    alertSuccess(`Image resized successfully. To width: ${width}, height: ${height}`);
   });
 
 }
@@ -91,3 +100,4 @@ function alertSuccess(message) {
 }
 
 document.querySelector('#img').addEventListener('change', loadImage);
+form.addEventListener('submit', (e) => sendImage(e));

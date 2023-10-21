@@ -1,13 +1,18 @@
 const path = require('path');
-const { app, BrowserWindow, Menu } = require('electron');
+const os = require('os');
+const fs = require('fs');
+const { app, BrowserWindow, Menu, ipcMain, shell } = require('electron');
+const ResizeImg = require('resize-img');
 
 // the below one is used to check if the app is in production or development
 const isMac = process.platform === 'darwin';
 const isDev = process.env.NODE_ENV !== 'production';
 
+let mainWindow;
+
 // the below one is used to create a window
 function createMainWindow() {
-    const mainWindow = new BrowserWindow({
+    mainWindow = new BrowserWindow({
         title: 'SnapScale',
         width: isDev ? 1000 : 500,
         height: 600,
@@ -74,13 +79,56 @@ app.whenReady().then(() => {
 
     const mainMenu = Menu.buildFromTemplate(menu);
 
+    Menu.setApplicationMenu(mainMenu);
+
     app.on('activate', () => {
         if (BrowserWindow.getAllWindows().length === 0) {
             createMainWindow();
         }
     });
 
+    // Remove mainwindow from memory when closed
+    if (BrowserWindow.getAllWindows().length === 0) {
+        mainWindow = null;
+    }
+
 });
+
+//  Respond to ipcRenderer resize
+ipcMain.on('image:resize', (e, options) => {
+    options.dest = path.join(os.homedir(), 'SnapScaleImages');
+    console.log(options)
+    resizeImage(options);
+});
+
+async function resizeImage({ imgPath, width, height, dest }) {
+    try {
+        const newPath = await ResizeImg(fs.readFileSync(imgPath), {
+            width: parseInt(width),
+            height: parseInt(height),
+        });
+
+        // Creating filename
+        const filename = path.basename(imgPath);
+
+        // Creating destination folder if it does not exists
+        if(!fs.existsSync(dest)) {
+            fs.mkdirSync(dest);
+        }
+
+        // witing file to destination folder
+        fs.writeFileSync(path.join(dest, filename), newPath);
+
+        // Sending success message to renderer
+        mainWindow.webContents.send('image:done', 'Image resized successfully');
+
+        // Open dest folder
+        shell.openPath(dest);
+
+    } catch (error) {
+        console.log(error)
+    }
+}
 
 // the below one is used to quit the app when all the windows are closed except on mac as mac works differently
 app.on('window-all-closed', () => {
