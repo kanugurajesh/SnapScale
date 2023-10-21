@@ -1,0 +1,18 @@
+{
+  "name": "image-resizer",
+  "productName": "SnapScale",
+  "version": "1.0.0",
+  "description": "image resizer",
+  "main": "main.js",
+  "scripts": {
+    "start":"electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rajesh Kanugu",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^27.0.2",
+    "resize-img": "^2.0.0",
+    "toastify-js": "^1.12.0"
+  }
+}
