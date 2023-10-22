@@ -1,7 +1,7 @@
 
 # SnapScale
 
-An Image Resizer used to resize any image easily and it can setup on windows, mac, linux systems locally
+SnapScale is an Image Resizer used to resize any image easily and it can setup on windows, mac, linux systems locally
 
 ## Problem Statement
 
