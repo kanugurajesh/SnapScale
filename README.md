@@ -15,6 +15,15 @@ Image resizers are commonly found online, 🌐 but many of them require sign-ups
 
 SnapScale is the ultimate solution to your image resizing needs! 🌟 No subscription model or annoying sign-up required. 🚫💳 Install it right on your local machine for super-convenient image handling. 🖥️🎉 With SnapScale, resizing images is a piece of 🍰 – no need to hassle with downloading images, they're automatically fetched after resizing! ⚙️💨 It's lightning-fast and incredibly user-friendly! 🏃‍♂️💨 Try it out today!
 
+
+## Features
+
+- Eye Friendly colors
+- Fullscreen mode
+- Cross platform
+- Offline
+- Easy to use
+
 ## Prerequisites
 
 ```bash
