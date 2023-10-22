@@ -46,4 +46,4 @@ npm start
 
 ## Demo
 
-![SnapScale Gif](https://ik.imagekit.io/hbzknb1hm/2023-10-22%2014-08-37.gif?updatedAt=1697968211352)
+[![Watch the video](https://ik.imagekit.io/hbzknb1hm/Screenshot%202023-10-22%20150508.png?updatedAt=1697967364437)](https://youtu.be/ISmqmLtC4fc?feature=shared)
