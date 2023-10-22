@@ -151,7 +151,6 @@ app.whenReady().then(() => {
 //  Respond to ipcRenderer resize
 ipcMain.on('image:resize', (e, options) => {
     options.dest = path.join(os.homedir(), 'SnapScaleImages');
-    console.log(options)
     resizeImage(options);
 });
 
