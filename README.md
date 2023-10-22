@@ -13,8 +13,10 @@ SnapScale is the ultimate solution to your image resizing needs! 🌟 No subscri
 
 ## Prerequisites
 
+```bash
 1. git setup on local machine
 2. npm
+```
 
 ## Installation
 
