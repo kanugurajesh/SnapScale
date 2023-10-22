@@ -78,9 +78,9 @@ npm start
 
 I want to add more features and Contributions are always welcome!
 
-See `contributing.md` for ways to get started.
+See [contributing.md](https://github.com/rajesh604/SnapScale/blob/main/contributing.md) for ways to get started.
 
-Please adhere to this project's `code of conduct`.
+Please adhere to this project's [code of conduct](https://github.com/rajesh604/SnapScale/blob/main/code_of_conduct.md).
 
 ## Authors
 
