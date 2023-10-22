@@ -27,4 +27,17 @@ npm start
 
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+### Splash Screen
+![Splash Screen](https://ik.imagekit.io/hbzknb1hm/Screenshot%202023-10-22%20140626.png?updatedAt=1697967029718)
+
+### Starting Screen
+![Starting Screen](https://ik.imagekit.io/hbzknb1hm/Screenshot%202023-10-22%20150508.png?updatedAt=1697967364437)
+
+### Image Uploading
+![Image Uploading](https://ik.imagekit.io/hbzknb1hm/Screenshot%202023-10-22%20150516.png?updatedAt=1697967364757)
+
+### After Image Upload
+![After Image Upload](https://ik.imagekit.io/hbzknb1hm/Screenshot%202023-10-22%20150522.png?updatedAt=1697967364753)
+
+### After Resizing download Image opens
+![After Resizing downloaded image opens](https://ik.imagekit.io/hbzknb1hm/Screenshot%202023-10-22%20150536.png?updatedAt=1697967365630)
