@@ -64,6 +64,6 @@ When contributing to SnapScale, please follow these guidelines:
 If you encounter a bug, have a feature request, or want to discuss improvements, please open an issue on the SnapScale GitHub repository. When reporting issues, include as much detail as possible to help us understand and reproduce the problem.
 
 ## License
-By contributing to SnapScale, you agree that your contributions will be licensed under the project's open-source license. Please read the LICENSE file for more information.
+By contributing to SnapScale, you agree that your contributions will be licensed under the project's open-source license. Please read the [License](https://github.com/rajesh604/SnapScale/blob/main/License.txt) file for more information.
 
 We appreciate your contributions to make SnapScale a more user-friendly and efficient image resizing tool! Thank you for your support. 🚀📷
