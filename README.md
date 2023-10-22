@@ -1,3 +1,7 @@
+<div align="center">
+  <img src="https://ik.imagekit.io/hbzknb1hm/resize.png?updatedAt=1697969118065" alt="SnapScale Logo" width="150" height="150">
+</div>
+<br/>
 
 # SnapScale
 
