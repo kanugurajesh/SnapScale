@@ -105,9 +105,31 @@ const menu = [
     ])
 ]
 
+let splash;
+
+function createSplashWindow() {
+    splash = new BrowserWindow({
+        width: 500,
+        height: 300,
+        frame: false,
+        icon: 'icon.ico',
+        alwaysOnTop: true,
+    });
+
+    splash.loadFile(path.join(__dirname, 'renderer/splash.html'))
+    splash.show();
+}
+
 // or you can use the below one to create a window when the app is ready it returns a promise
 app.whenReady().then(() => {
-    createMainWindow();
+    createSplashWindow();
+    splash.once('ready-to-show', () => {
+        setTimeout(() => {
+            splash.close();
+            splash = null;
+            createMainWindow();
+        }, 2000);
+    })
 
     const mainMenu = Menu.buildFromTemplate(menu);
 
