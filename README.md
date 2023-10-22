@@ -43,3 +43,7 @@ npm start
 
 ### After Resizing download Image opens
 ![After Resizing downloaded image opens](https://ik.imagekit.io/hbzknb1hm/Screenshot%202023-10-22%20150536.png?updatedAt=1697967365630)
+
+## Demo
+
+<img src="https://ik.imagekit.io/hbzknb1hm/2023-10-22%2014-08-37.gif?updatedAt=1697968211352" alt="SnapScale Demo" width="200" height="200">
