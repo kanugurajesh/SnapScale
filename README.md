@@ -52,6 +52,11 @@ npm start
 
 [![Watch the video](https://ik.imagekit.io/hbzknb1hm/Screenshot%202023-10-22%20150508.png?updatedAt=1697967364437)](https://youtu.be/ISmqmLtC4fc?feature=shared)
 
+## 🔗 Links
+[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://rajeshportfolio.me/)
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/rajesh-kanugu-aba8a3254/)
+[![twitter](https://img.shields.io/badge/twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/exploringengin1)
+
 ## Authors
 
 - [@rajesh604](https://github.com/rajesh604)
