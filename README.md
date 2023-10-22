@@ -46,4 +46,4 @@ npm start
 
 ## Demo
 
-<img src="https://ik.imagekit.io/hbzknb1hm/2023-10-22%2014-08-37.gif?updatedAt=1697968211352" alt="SnapScale Demo" width="200" height="200">
+![SnapScale Gif](https://ik.imagekit.io/hbzknb1hm/2023-10-22%2014-08-37.gif?updatedAt=1697968211352)
