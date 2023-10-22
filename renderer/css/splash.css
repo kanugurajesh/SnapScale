@@ -39,7 +39,7 @@ body {
     width: 90%;
     white-space: nowrap;
     overflow: hidden;
-    margin-left: 10px;
+    margin-left: 20px;
     text-shadow: black 1px 1px 1px;
     animation: 
             typing 2s steps(9),
