@@ -109,8 +109,8 @@ let splash;
 
 function createSplashWindow() {
     splash = new BrowserWindow({
-        width: 500,
-        height: 300,
+        width: 600,
+        height: 400,
         frame: false,
         icon: 'icon.ico',
         alwaysOnTop: true,
@@ -128,7 +128,7 @@ app.whenReady().then(() => {
             splash.close();
             splash = null;
             createMainWindow();
-        }, 2000);
+        }, 3000);
     })
 
     const mainMenu = Menu.buildFromTemplate(menu);
