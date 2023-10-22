@@ -17,6 +17,7 @@ function createMainWindow() {
         title: 'SnapScale',
         width: isDev ? 1000 : 500,
         height: 600,
+        icon: 'icon.ico',
         webPreferences: {
             contextIsolation: true,
             nodeIntegration: true,
@@ -39,6 +40,7 @@ function createAboutWindow() {
         title: 'About SnapScale',
         width: 300,
         height: 300,
+        icon: 'icon.ico',
     })
 
     aboutWindow.loadFile(path.join(__dirname, 'renderer/about.html'));
@@ -56,7 +58,34 @@ const menu = [
         ]
      }] : []),
     {
-        label: 'fileName'
+        label: 'file',
+        submenu: [
+            {
+                label: 'Quit',
+                accelerator: 'CmdOrCtrl+W',
+                click: () => app.quit()
+            },
+            {
+                label: 'minimize',
+                accelerator: 'CmdOrCtrl+M',
+                click: () => mainWindow.minimize()
+            },
+            {
+                label: 'maximize',
+                accelerator: 'CmdOrCtrl+X',
+                click: () => mainWindow.maximize()
+            },
+            {
+                label: 'restore',
+                accelerator: 'CmdOrCtrl+R',
+                click: () => mainWindow.restore()
+            },
+            {
+                label: 'reload',
+                accelerator: 'CmdOrCtrl+L',
+                click: () => mainWindow.reload()
+            }
+        ]
     },
     ...(!isMac ? [
         {
@@ -65,16 +94,16 @@ const menu = [
                 {
                     label: 'About',
                     click: createAboutWindow
+                },
+                {
+                    label: 'Creator',
+                    click: () => shell.openExternal('https://rajeshportfolio.me')
                 }
             ]
         }
     ] : [
     ])
 ]
-
-
-// the below one is used to create a window when the app is ready
-// app.on('ready', createMainWindow);
 
 // or you can use the below one to create a window when the app is ready it returns a promise
 app.whenReady().then(() => {

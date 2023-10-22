@@ -7,10 +7,19 @@ const outputPath = document.querySelector('#output-path');
 const filename = document.querySelector('#filename');
 const heightInput = document.querySelector('#height');
 const widthInput = document.querySelector('#width');
+const selectImg = document.querySelector('#selectImg');
+const imageText = document.querySelector('#imgText');
 
 // console.log(versions.node());
 function loadImage(e) {
   const file = e.target.files[0];
+  // set the selectImg to the image uploaded
+  selectImg.src = URL.createObjectURL(file);
+
+  // set width and height
+  selectImg.style.width = '100px';
+  selectImg.style.height = '100px';
+  imageText.style.display = 'none';
 
   // check if file is an image
   if (!isFileImage(file)) {
