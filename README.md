@@ -66,15 +66,24 @@ npm start
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/rajesh-kanugu-aba8a3254/)
 [![twitter](https://img.shields.io/badge/twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/exploringengin1)
 
+## Tech Stack
+
+- Html
+- Css
+- JavaScript
+- Electron.js
+- Node.js
 
 ## Contributing
 
 I want to add more features and Contributions are always welcome!
 
-See `contributing.md` for ways to get started.
+See [contributing.md](https://github.com/rajesh604/SnapScale/blob/main/contributing.md) for ways to get started.
 
-Please adhere to this project's `code of conduct`.
+Please adhere to this project's [code of conduct](https://github.com/rajesh604/SnapScale/blob/main/code_of_conduct.md).
 
 ## Authors
 
 - [@rajesh604](https://github.com/rajesh604)
+
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
