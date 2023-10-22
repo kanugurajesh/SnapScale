@@ -29,7 +29,7 @@ Unacceptable behavior includes, but is not limited to:
 
 ## Reporting Incidents
 
-If you experience or witness behavior that violates this Code of Conduct, please report it to the project maintainers by contacting [contact@example.com]. All reports will be kept confidential and will be handled in accordance with our project's procedures.
+If you experience or witness behavior that violates this Code of Conduct, please report it to the project maintainers by contacting [kanugurajesh3@gmail.com]. All reports will be kept confidential and will be handled in accordance with our project's procedures.
 
 ## Consequences
 
