@@ -85,3 +85,5 @@ Please adhere to this project's [code of conduct](https://github.com/rajesh604/S
 ## Authors
 
 - [@rajesh604](https://github.com/rajesh604)
+
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
