@@ -51,3 +51,7 @@ npm start
 ## Demo
 
 [![Watch the video](https://ik.imagekit.io/hbzknb1hm/Screenshot%202023-10-22%20150508.png?updatedAt=1697967364437)](https://youtu.be/ISmqmLtC4fc?feature=shared)
+
+## Authors
+
+- [@rajesh604](https://github.com/rajesh604)
