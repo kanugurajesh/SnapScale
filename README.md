@@ -86,7 +86,7 @@ Please adhere to this project's [code of conduct](https://github.com/rajesh604/S
 
 ## Authors
 
-- [@rajesh604](https://github.com/rajesh604)
+- [@kanugurajesh](https://github.com/kanugurajesh)
 
 ## Support
 
